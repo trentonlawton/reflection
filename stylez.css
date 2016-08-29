@@ -1,8 +1,10 @@
-@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
+@import 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700';
 
 body{
 width: 100%;
 height: 100%;
+
+z-index: 0;
 
 }
 
@@ -13,16 +15,31 @@ h1{
   font-weight: 100;
   font-size: 7em;
   display: flex;
+  color: #fff;
 }
 
 
-input{
+#namebox{
 border: none;
-border-bottom: 2px solid #222;
+border-bottom: 2px solid #fff;
 width: 100%;
+background-color: transparent;
+
 }
 
 #hello{
   top:50%;
   position: absolute;
+  z-index: 1;
+}
+
+.blur{
+  background-image: url(assets/firewatch.jpg);
+
+width: 100%;
+height: 100%;
+  -webkit-filter: blur(5px);
+  -o-filter: blur(5px);
+  filter: blur(5px);
+position: absolute;
 }
